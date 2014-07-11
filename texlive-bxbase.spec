@@ -6,7 +6,7 @@
 # catalog-version 0.5
 Name:		texlive-bxbase
 Version:	0.5
-Release:	6
+Release:	7
 Summary:	BX bundle base components
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/japanese/BX/bxbase
