@@ -1,12 +1,6 @@
-# revision 28825
-# category Package
-# catalog-ctan /language/japanese/BX/bxbase
-# catalog-date 2013-01-13 12:34:17 +0100
-# catalog-license other-free
-# catalog-version 0.5
 Name:		texlive-bxbase
-Version:	0.5
-Release:	9
+Version:	1.1
+Release:	1
 Summary:	BX bundle base components
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/japanese/BX/bxbase
@@ -31,15 +25,8 @@ TeXLive bxbase package.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/bxbase/bxbase.def
-%{_texmfdistdir}/tex/latex/bxbase/bxbase.sty
-%{_texmfdistdir}/tex/latex/bxbase/bxucs.sty
-%{_texmfdistdir}/tex/latex/bxbase/bxutf8.def
-%{_texmfdistdir}/tex/latex/bxbase/bxutf8x.def
-%{_texmfdistdir}/tex/latex/bxbase/zxbase.sty
-%doc %{_texmfdistdir}/doc/latex/bxbase/00README
-%doc %{_texmfdistdir}/doc/latex/bxbase/LICENSE
-%doc %{_texmfdistdir}/doc/latex/bxbase/README
+%{_texmfdistdir}/tex/latex/bxbase
+%doc %{_texmfdistdir}/doc/latex/bxbase
 
 #-----------------------------------------------------------------------
 %prep
