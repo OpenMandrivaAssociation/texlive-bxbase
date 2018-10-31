@@ -1,6 +1,6 @@
 Name:		texlive-bxbase
 Version:	1.1
-Release:	1
+Release:	2
 Summary:	BX bundle base components
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/japanese/BX/bxbase
