@@ -5,8 +5,8 @@ Summary:	BX bundle base components
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/japanese/BX/bxbase
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bxbase.r56528.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bxbase.doc.r56528.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bxbase.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bxbase.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
