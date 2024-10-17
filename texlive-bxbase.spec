@@ -3,7 +3,7 @@ Version:	66115
 Release:	1
 Summary:	BX bundle base components
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/language/japanese/BX/bxbase
+URL:		https://www.ctan.org/tex-archive/language/japanese/BX/bxbase
 License:	OTHER-FREE
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bxbase.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bxbase.doc.r%{version}.tar.xz
