@@ -1,39 +1,25 @@
-Name:		texlive-bxbase
-Version:	66115
-Release:	1
+%global tl_name bxbase
+%global tl_revision 78793
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	1.2a
+Release:	%{tl_revision}.1
 Summary:	BX bundle base components
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/language/japanese/BX/bxbase
-License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bxbase.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bxbase.doc.r%{version}.tar.xz
+License:	mit
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/bxbase.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/bxbase.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+%texlive_base_requires
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-TeXLive bxbase package.
+The main purpose of this bundle is to serve as an underlying library for
+other packages created by the same author (their names start with "BX"
+or "PX"). However bxbase package contains a few user-level commands and
+is of some use by itself.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/bxbase
-%doc %{_texmfdistdir}/doc/latex/bxbase
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc %{buildroot}%{_texmfdistdir}
